@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- ── SEO: French ── -->
+<title>DZImport — Calculateur de dédouanement automobile Algérie 2025/2026</title>
+<meta name="description" content="Calculez gratuitement les droits de douane, TVA et taxes d'importation pour votre véhicule neuf ou de moins de 3 ans en Algérie. Taux officiels 2025, taux parallèle, 25 modèles du marché algérien."/>
+<meta name="keywords" content="dédouanement voiture Algérie, droits de douane automobile Algérie 2025, calculateur importation véhicule Algérie, BYD Algérie, Dacia Algérie, taxe douane voiture"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://dzimport.dz/"/>
+
+<!-- ── SEO: English ── -->
+<meta name="description" lang="en" content="Free Algeria car import duty calculator 2025/2026. Estimate customs duty, VAT and taxes for new or under-3-year vehicles. Official rates, black market rate, 25 Algerian market models."/>
+
+<!-- ── SEO: Arabic ── -->
+<meta name="description" lang="ar" content="احسب مجاناً رسوم الجمارك والضرائب لاستيراد سيارتك إلى الجزائر 2025. تقدير دقيق للرسوم الجمركية، TVA، وسعر الصرف الموازي. 25 موديل من السوق الجزائري."/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://dzimport.dz/"/>
+<meta property="og:title" content="DZImport — Calculateur dédouanement voiture Algérie 2025"/>
+<meta property="og:description" content="Calculez gratuitement les droits de douane pour importer votre véhicule en Algérie. Neuf ou moins de 3 ans, toutes origines."/>
+<meta property="og:locale" content="fr_DZ"/>
+<meta property="og:locale:alternate" content="ar_DZ"/>
+<meta property="og:locale:alternate" content="en_GB"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DZImport — Calculateur dédouanement voiture Algérie"/>
+<meta name="twitter:description" content="Droits de douane, TVA, taux officiel & parallèle. Gratuit et mis à jour 2025."/>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "DZImport",
+  "description": "Calculateur de dédouanement automobile pour l'Algérie",
+  "url": "https://dzimport.dz",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "DZD" },
+  "inLanguage": ["fr", "ar", "en"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+  --brand:       #1B4FD8;
+  --brand-light: #EEF3FE;
+  --brand-dark:  #0F2E8A;
+  --brand-mid:   #3D6AE8;
+  --accent:      #E8420A;
+  --accent-lt:   #FEF0EC;
+  --surface:     #FFFFFF;
+  --bg:          #F4F6FC;
+  --bg2:         #EAEEF8;
+  --border:      #C9D3EE;
+  --border-dark: #9AAAD4;
+  --text:        #0F1A3E;
+  --text2:       #3D4F7A;
+  --text3:       #7080A8;
+  --success:     #0F7D4B;
+  --success-lt:  #E7F7EF;
+  --warn:        #944F00;
+  --warn-lt:     #FFF4E5;
+  --warn-brd:    #F5A623;
+  --danger:      #B91C1C;
+  --danger-lt:   #FEF2F2;
+  --danger-brd:  #F87171;
+  --radius:      10px;
+  --radius-lg:   14px;
+  --shadow:      0 1px 3px rgba(27,79,216,.08), 0 0 0 1px rgba(27,79,216,.06);
+  --shadow-md:   0 4px 16px rgba(27,79,216,.12), 0 0 0 1px rgba(27,79,216,.06);
+  --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-ar: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+body[dir=rtl] { font-family: var(--font-ar); }
+
+/* ═══ NAVBAR ═══ */
+.navbar {
+  background: var(--brand);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(27,79,216,.25);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.logo-icon {
+  width: 36px; height: 36px;
+  background: white;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.logo-icon svg { width: 22px; height: 22px; }
+.logo-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+.logo-name span { color: #93B4FF; }
+.logo-tagline {
+  font-size: 11px;
+  color: rgba(255,255,255,.65);
+  margin-top: -2px;
+  display: block;
+  letter-spacing: .02em;
+}
+.nav-lang {
+  display: flex;
+  gap: 4px;
+}
+.nav-lang button {
+  padding: 5px 11px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font);
+  border: 1.5px solid rgba(255,255,255,.3);
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255,255,255,.8);
+  cursor: pointer;
+  transition: all .15s;
+}
+.nav-lang button:hover { background: rgba(255,255,255,.15); color: #fff; border-color: rgba(255,255,255,.5); }
+.nav-lang button.active { background: white; color: var(--brand); border-color: white; }
+
+/* ═══ HERO ═══ */
+.hero {
+  background: var(--brand);
+  padding: 2.5rem 2rem 3.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; left: 0; right: 0;
+  height: 40px;
+  background: var(--bg);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,.9);
+  margin-bottom: 1rem;
+}
+.hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #4ADE80; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+.hero h1 {
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+}
+.hero p {
+  font-size: 15px;
+  color: rgba(255,255,255,.75);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ═══ MAIN LAYOUT ═══ */
+.container { max-width: 860px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+
+/* ═══ TABS ═══ */
+.tab-row {
+  display: flex;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.tab-btn {
+  flex: 1;
+  padding: 11px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font);
+  border: none;
+  border-right: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all .15s;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+body[dir=rtl] .tab-btn { border-right: none; border-left: 1.5px solid var(--border); }
+.tab-btn:last-child { border-right: none; }
+body[dir=rtl] .tab-btn:last-child { border-left: none; }
+.tab-btn:hover:not(.active) { background: var(--bg); color: var(--text); }
+.tab-btn.active { background: var(--brand-light); color: var(--brand); }
+
+/* ═══ CARDS ═══ */
+.card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+.card-icon {
+  width: 30px; height: 30px;
+  background: var(--brand-light);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.card-icon svg { width: 16px; height: 16px; stroke: var(--brand); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.card-title { font-size: 13px; font-weight: 600; color: var(--text); letter-spacing: .01em; }
+.card-sub { font-size: 11px; color: var(--text3); margin-top: 1px; }
+
+/* ═══ FORM ═══ */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field label { font-size: 12px; font-weight: 600; color: var(--text2); letter-spacing: .02em; }
+.field input, .field select {
+  height: 40px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-family: var(--font);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  transition: border-color .15s, box-shadow .15s;
+  width: 100%;
+}
+body[dir=rtl] .field input, body[dir=rtl] .field select { font-family: var(--font-ar); }
+.field input:hover, .field select:hover { border-color: var(--brand-mid); }
+.field input:focus, .field select:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(27,79,216,.15);
+}
+.hint { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+/* ═══ VTYPE BUTTONS ═══ */
+.vtype-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.vtype-btn {
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text2);
+  cursor: pointer;
+  text-align: left;
+  transition: all .15s;
+  font-family: var(--font);
+}
+body[dir=rtl] .vtype-btn { text-align: right; }
+.vtype-btn:hover:not(.active) { border-color: var(--brand-mid); background: var(--brand-light); }
+.vtype-btn.active { border-color: var(--brand); background: var(--brand-light); color: var(--brand); box-shadow: 0 0 0 2px rgba(27,79,216,.12); }
+.vtype-btn .vt-label { font-size: 13px; font-weight: 600; display: block; margin-bottom: 2px; }
+.vtype-btn .vt-sub { font-size: 11px; color: var(--text3); }
+.vtype-btn.active .vt-sub { color: var(--brand-mid); }
+
+/* ═══ SEARCH ═══ */
+.search-wrap { position: relative; margin-bottom: 10px; }
+.search-icon {
+  position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+  width: 16px; height: 16px; stroke: var(--text3); fill: none; stroke-width: 2;
+  pointer-events: none;
+}
+body[dir=rtl] .search-icon { left: auto; right: 12px; }
+#model-search {
+  width: 100%; height: 40px;
+  padding: 0 12px 0 36px;
+  font-size: 13px;
+  font-family: var(--font);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  transition: all .15s;
+}
+body[dir=rtl] #model-search { padding: 0 36px 0 12px; font-family: var(--font-ar); }
+#model-search:focus { outline: none; border-color: var(--brand); background: var(--surface); box-shadow: 0 0 0 3px rgba(27,79,216,.12); }
+
+/* ═══ MODEL PILLS ═══ */
+.model-scroll { max-height: 130px; overflow-y: auto; padding: 2px; }
+.model-scroll::-webkit-scrollbar { width: 4px; }
+.model-scroll::-webkit-scrollbar-track { background: var(--bg); border-radius: 4px; }
+.model-scroll::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 4px; }
+.model-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+.model-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 12px;
+  font-size: 12px; font-weight: 500;
+  font-family: var(--font);
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  color: var(--text2);
+  cursor: pointer;
+  transition: all .12s;
+  white-space: nowrap;
+}
+.model-pill:hover { border-color: var(--brand-mid); color: var(--brand); background: var(--brand-light); }
+.model-pill.sel { border-color: var(--brand); background: var(--brand); color: #fff; }
+.model-pill .mtag {
+  font-size: 10px; font-weight: 600;
+  padding: 1px 5px; border-radius: 4px;
+  background: rgba(255,255,255,.25); color: #fff;
+}
+.model-pill:not(.sel) .mtag { background: var(--success-lt); color: var(--success); }
+.no-res { font-size: 13px; color: var(--text3); padding: 8px 4px; }
+
+/* ═══ RATE BOXES ═══ */
+.rate-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.rate-box {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  background: var(--surface);
+}
+.rate-box .rb-label { font-size: 11px; font-weight: 600; color: var(--text2); margin-bottom: 6px; display: flex; align-items: center; gap: 4px; }
+.rate-box .rb-val { font-size: 16px; font-weight: 700; color: var(--text); }
+.rate-box .rb-sub { font-size: 11px; color: var(--text3); margin-top: 3px; }
+.rate-box.bm {
+  border-color: var(--warn-brd);
+  background: var(--warn-lt);
+}
+.rate-box.bm .rb-label { color: var(--warn); }
+.bm-input {
+  width: 100%; height: 38px;
+  padding: 0 10px;
+  font-size: 15px; font-weight: 700;
+  font-family: var(--font);
+  border: 1.5px solid var(--warn-brd);
+  border-radius: 7px;
+  background: rgba(255,255,255,.6);
+  color: var(--warn);
+  transition: all .15s;
+}
+.bm-input:focus { outline: none; border-color: #B45309; box-shadow: 0 0 0 3px rgba(245,166,35,.2); }
+.use-bm-row {
+  margin-top: 10px;
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  cursor: pointer;
+  transition: all .15s;
+  user-select: none;
+}
+.use-bm-row:hover { border-color: var(--brand-mid); background: var(--brand-light); }
+.use-bm-row input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--brand); cursor: pointer; }
+.use-bm-row label { font-size: 13px; font-weight: 500; color: var(--text2); cursor: pointer; margin: 0; }
+
+/* ═══ DIVIDER ═══ */
+.divider { height: 1px; background: var(--border); margin: .9rem 0; }
+
+/* ═══ RESULTS ═══ */
+.result-wrapper { animation: slideUp .3s ease; }
+@keyframes slideUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+.result-card {
+  background: var(--surface);
+  border: 1.5px solid var(--brand);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-top: 1rem;
+}
+.result-head {
+  background: var(--brand);
+  padding: 1rem 1.25rem;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 8px;
+}
+body[dir=rtl] .result-head { flex-direction: row-reverse; }
+.result-head h3 { font-size: 14px; font-weight: 600; color: #fff; }
+.result-rate-badge {
+  font-size: 11px; padding: 3px 9px; border-radius: 12px;
+  background: rgba(255,255,255,.2); color: rgba(255,255,255,.9);
+  border: 1px solid rgba(255,255,255,.25);
+}
+.result-body { padding: 1.25rem; }
+.metric-row { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; margin-bottom: 1rem; }
+.metric {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: .85rem .6rem;
+  text-align: center;
+}
+.metric .ml { font-size: 11px; font-weight: 600; color: var(--text2); line-height: 1.3; margin-bottom: 4px; }
+.metric .mv { font-size: 14px; font-weight: 700; color: var(--brand); }
+.metric .ms { font-size: 10px; color: var(--text3); margin-top: 2px; }
+.line-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 5px 0; font-size: 13px;
+}
+body[dir=rtl] .line-row { flex-direction: row-reverse; }
+.line-row .ln { color: var(--text2); }
+.line-row .lv { font-weight: 600; color: var(--text); }
+.line-row.tot { font-size: 14px; }
+.line-row.tot .ln { font-weight: 600; color: var(--text); }
+.grand-box {
+  margin-top: .85rem;
+  padding: 14px 16px;
+  background: var(--brand-light);
+  border: 2px solid var(--brand);
+  border-radius: var(--radius);
+  display: flex; justify-content: space-between; align-items: center;
+}
+body[dir=rtl] .grand-box { flex-direction: row-reverse; }
+.grand-box .gl { font-size: 13px; font-weight: 600; color: var(--brand-dark); }
+.grand-box .gv { font-size: 20px; font-weight: 700; color: var(--brand); }
+.chart-wrap { position: relative; width: 100%; height: 180px; margin-top: 1rem; }
+.export-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  margin-top: 1rem;
+  padding: 9px 18px;
+  font-size: 13px; font-weight: 600;
+  font-family: var(--font);
+  border: 1.5px solid var(--border-dark);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text2);
+  cursor: pointer;
+  transition: all .15s;
+}
+.export-btn:hover { border-color: var(--brand); color: var(--brand); background: var(--brand-light); }
+
+/* ═══ COMPARE ═══ */
+.cmp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: .9rem; }
+.cmp-col {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+.cmp-col.winner { border-color: var(--success); background: var(--success-lt); }
+.cmp-col h4 { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: .7rem; display: flex; align-items: center; gap: 6px; }
+
+/* ═══ NOTICES ═══ */
+.notice {
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 12.5px;
+  line-height: 1.55;
+  border: 1.5px solid var(--border);
+  margin-top: .75rem;
+  background: var(--bg);
+  color: var(--text2);
+}
+.notice.info { border-color: var(--brand-mid); background: var(--brand-light); color: var(--brand-dark); }
+.notice.warn { border-color: var(--warn-brd); background: var(--warn-lt); color: var(--warn); }
+.notice.danger { border-color: var(--danger-brd); background: var(--danger-lt); color: var(--danger); }
+
+/* ═══ HOW TO USE ═══ */
+.how-section {
+  margin-top: 2.5rem;
+  scroll-margin-top: 80px;
+}
+.how-section h2 {
+  font-size: 20px; font-weight: 700; color: var(--text);
+  margin-bottom: 1.25rem;
+  display: flex; align-items: center; gap: 10px;
+}
+.how-section h2::after {
+  content: ''; flex: 1; height: 1.5px; background: var(--border);
+}
+.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.step-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.step-num {
+  width: 30px; height: 30px;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700;
+  margin-bottom: .75rem;
+}
+.step-card h3 { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+.step-card p { font-size: 12px; color: var(--text2); line-height: 1.55; }
+.step-icon {
+  position: absolute; top: 1rem; right: 1rem;
+  width: 24px; height: 24px; opacity: .18;
+}
+body[dir=rtl] .step-icon { right: auto; left: 1rem; }
+
+/* ═══ FAQ ═══ */
+.faq-list { display: flex; flex-direction: column; gap: 8px; margin-top: 1.25rem; }
+.faq-item {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.faq-q {
+  width: 100%; padding: 13px 16px;
+  font-size: 13px; font-weight: 600;
+  font-family: var(--font);
+  text-align: left; color: var(--text);
+  background: transparent; border: none;
+  cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  transition: background .15s;
+}
+body[dir=rtl] .faq-q { text-align: right; font-family: var(--font-ar); }
+.faq-q:hover { background: var(--bg); }
+.faq-q svg { flex-shrink: 0; width: 16px; height: 16px; stroke: var(--text3); transition: transform .2s; }
+.faq-item.open .faq-q svg { transform: rotate(180deg); }
+.faq-a {
+  display: none;
+  padding: 0 16px 13px;
+  font-size: 12.5px; color: var(--text2);
+  line-height: 1.6;
+  border-top: 1px solid var(--border);
+}
+.faq-item.open .faq-a { display: block; }
+
+/* ═══ FOOTER ═══ */
+.footer {
+  background: var(--text);
+  color: rgba(255,255,255,.6);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.footer strong { color: #fff; }
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 600px) {
+  .navbar { padding: 0 1rem; }
+  .logo-tagline { display: none; }
+  .grid-2, .grid-3, .rate-row, .cmp-grid, .vtype-row { grid-template-columns: 1fr; }
+  .metric-row { grid-template-columns: 1fr 1fr; }
+  .steps-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 20px; }
+}
+
+@media print {
+  .navbar, .hero, .tab-row, .how-section, .footer,
+  .export-btn, .model-grid, .search-wrap,
+  .use-bm-row, .vtype-row, button:not(.export-btn) { display: none !important; }
+  body { background: white; }
+  .result-card { box-shadow: none; border: 1.5px solid #ccc; }
+  .container { padding: 1rem; max-width: 100%; }
+}
+</style>
+</head>
+<body id="body">
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar" role="navigation" aria-label="Navigation principale">
+  <a href="#" class="logo" aria-label="DZImport — Accueil">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#1B4FD8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 17l2-6h14l2 6"/><rect x="2" y="17" width="20" height="4" rx="1.5"/>
+        <circle cx="6.5" cy="21" r="1.5"/><circle cx="17.5" cy="21" r="1.5"/>
+        <path d="M8 11V7M16 11V7"/>
+      </svg>
+    </div>
+    <div>
+      <span class="logo-name">DZ<span>Import</span></span>
+      <span class="logo-tagline" id="nav-tag">Calculateur de dédouanement automobile</span>
+    </div>
+  </a>
+  <nav class="nav-lang" aria-label="Sélection de langue">
+    <button class="active" onclick="setLang('fr')" aria-label="Français" lang="fr">🇫🇷 FR</button>
+    <button onclick="setLang('en')" aria-label="English" lang="en">🇬🇧 EN</button>
+    <button onclick="setLang('ar')" aria-label="العربية" lang="ar">🇩🇿 عر</button>
+  </nav>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero" role="banner">
+  <div class="hero-badge">
+    <span class="dot"></span>
+    <span id="live-txt">Taux en direct · Mis à jour 2025</span>
+  </div>
+  <h1 id="hero-title">Calculateur de dédouanement automobile<br>pour l'Algérie</h1>
+  <p id="hero-sub">Estimez les droits de douane, TVA et taxes pour importer votre véhicule. Taux officiels & marché parallèle inclus.</p>
+</header>
+
+<!-- ═══ MAIN APP ═══ -->
+<main class="container" role="main">
+
+  <!-- tabs -->
+  <div class="tab-row" role="tablist">
+    <button class="tab-btn active" id="tab-single" role="tab" aria-selected="true" onclick="setTab('single')">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M5 8h6M5 5h6M5 11h4"/></svg>
+      <span id="t-single">Calcul simple</span>
+    </button>
+    <button class="tab-btn" id="tab-compare" role="tab" aria-selected="false" onclick="setTab('compare')">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M8 3l5 5-5 5" stroke-linecap="round"/></svg>
+      <span id="t-compare">Comparer Neuf vs &lt;3 ans</span>
+    </button>
+  </div>
+
+  <!-- vehicle type -->
+  <div class="card" id="vtype-card">
+    <div class="card-header">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 01-2-2V9a2 2 0 012-2h14l4 4v4a2 2 0 01-2 2h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+      </div>
+      <div><p class="card-title" id="lbl-vtype">Type de véhicule</p></div>
+    </div>
+    <div class="vtype-row">
+      <button class="vtype-btn active" data-val="new" id="btn-new" onclick="selectVtype(this)">
+        <span class="vt-label" id="lbl-new">Véhicule neuf</span>
+        <span class="vt-sub" id="sub-new">Moins de 12 mois · jamais immatriculé</span>
+      </button>
+      <button class="vtype-btn" data-val="used" id="btn-used" onclick="selectVtype(this)">
+        <span class="vt-label" id="lbl-used">Moins de 3 ans</span>
+        <span class="vt-sub" id="sub-used">Occasion · essence ou électrique uniquement</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- model search -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </div>
+      <div>
+        <p class="card-title" id="lbl-models">Rechercher un modèle populaire</p>
+        <p class="card-sub" id="lbl-models-sub">Cliquez pour pré-remplir le formulaire</p>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35" stroke-linecap="round"/></svg>
+      <input type="search" id="model-search" placeholder="Ex: Dacia, BYD, Toyota, Hyundai…" oninput="filterModels()" aria-label="Rechercher un modèle de voiture"/>
+    </div>
+    <div class="model-scroll"><div class="model-grid" id="model-grid"></div></div>
+  </div>
+
+  <!-- origin & engine -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+      </div>
+      <div><p class="card-title" id="lbl-origin-engine">Origine & motorisation</p></div>
+    </div>
+    <div class="grid-2" style="margin-bottom:12px">
+      <div class="field">
+        <label id="lbl-origin">Pays d'origine</label>
+        <select id="origin" onchange="calculate()" aria-label="Pays d'origine du véhicule">
+          <option value="europe" id="opt-europe">🇪🇺 Europe (France, Allemagne…)</option>
+          <option value="china" id="opt-china">🇨🇳 Chine</option>
+          <option value="japan" id="opt-japan">🇯🇵 Japon / Corée du Sud</option>
+          <option value="usa" id="opt-usa">🇺🇸 USA / Canada</option>
+          <option value="other" id="opt-other">🌍 Autre</option>
+        </select>
+      </div>
+      <div class="field">
+        <label id="lbl-engine">Type de moteur</label>
+        <select id="engine" onchange="calculate()" aria-label="Type de moteur">
+          <option value="petrol_small" id="opt-ps">Essence ≤ 1.8 L</option>
+          <option value="petrol_large" id="opt-pl">Essence &gt; 1.8 L</option>
+          <option value="diesel" id="opt-di">Diesel</option>
+          <option value="electric" id="opt-el">Électrique</option>
+          <option value="hybrid_small" id="opt-hs">Hybride ≤ 1.8 L</option>
+          <option value="hybrid_large" id="opt-hl">Hybride &gt; 1.8 L</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="field">
+        <label id="lbl-body">Carrosserie</label>
+        <select id="body" onchange="calculate()">
+          <option value="tourisme" id="opt-tour">Tourisme / SUV / Berline</option>
+          <option value="utilitaire" id="opt-util">Utilitaire / Fourgon</option>
+        </select>
+      </div>
+      <div class="field">
+        <label id="lbl-year">Année du véhicule</label>
+        <select id="year" onchange="calculate()">
+          <option value="2026">2026</option>
+          <option value="2025" selected>2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- value & rates -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      </div>
+      <div><p class="card-title" id="lbl-value-section">Valeur, transport & taux de change</p></div>
+    </div>
+    <div class="grid-2">
+      <div class="field">
+        <label id="lbl-price">Prix d'achat TTC</label>
+        <input type="number" id="price" value="15000" min="500" step="500" oninput="calculate()" aria-label="Prix d'achat du véhicule"/>
+      </div>
+      <div class="field">
+        <label id="lbl-currency">Devise</label>
+        <select id="currency" onchange="calculate()">
+          <option value="EUR">EUR — Euro</option>
+          <option value="USD">USD — Dollar US</option>
+          <option value="CNY">CNY — Yuan chinois</option>
+          <option value="JPY">JPY — Yen japonais</option>
+          <option value="KRW">KRW — Won coréen</option>
+          <option value="DZD">DZD — Dinar algérien</option>
+        </select>
+      </div>
+    </div>
+    <div class="field" style="margin-top:12px">
+      <label id="lbl-transport">Frais de transport (même devise)</label>
+      <input type="number" id="transport" value="1000" min="0" step="100" oninput="calculate()"/>
+      <p class="hint" id="transport-hint">Europe: 800–1 500 € · Chine: 2 000–4 000 $ · hors frais portuaires algériens</p>
+    </div>
+
+    <div class="divider"></div>
+    <p class="card-title" id="lbl-rates-title" style="margin-bottom:8px">Taux de change EUR → DZD</p>
+    <div class="rate-row">
+      <div class="rate-box">
+        <p class="rb-label" id="lbl-official-rate">💳 Taux officiel (Banque d'Algérie)</p>
+        <p class="rb-val" id="official-rate-val">Chargement…</p>
+        <p class="rb-sub" id="rate-used-note">Utilisé par défaut pour le calcul</p>
+      </div>
+      <div class="rate-box bm">
+        <p class="rb-label" id="lbl-bm-rate">🌑 Taux parallèle (Carré / Square)</p>
+        <input type="number" class="bm-input" id="bm-rate" placeholder="Ex: 248" min="100" max="999" step="1" oninput="calculate()" aria-label="Taux de change du marché parallèle"/>
+        <p class="rb-sub" id="bm-hint" style="color:var(--warn)">Entrez le taux du marché noir</p>
+      </div>
+    </div>
+    <div class="use-bm-row" onclick="toggleBm()">
+      <input type="checkbox" id="use-bm" onchange="calculate()"/>
+      <label id="lbl-use-bm">Calculer avec le taux parallèle</label>
+    </div>
+  </div>
+
+  <!-- results -->
+  <div id="result-section" role="region" aria-live="polite" aria-label="Résultats du calcul"></div>
+
+  <!-- disclaimer -->
+  <p class="notice" id="disclaimer-notice" style="margin-top:1rem">
+    ⚠️ Estimation indicative uniquement. Les montants réels varient selon le taux de change officiel, les frais portuaires et l'évaluation douanière (système ALSACE depuis juil. 2025). Consultez un transitaire agréé avant toute décision d'importation.
+  </p>
+
+  <!-- ═══ HOW TO USE ═══ -->
+  <section class="how-section" id="how-to-use" aria-labelledby="how-title">
+    <h2 id="how-title">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      <span id="how-heading">Comment utiliser ce calculateur</span>
+    </h2>
+    <div class="steps-grid" id="steps-grid"></div>
+
+    <div style="margin-top:1.5rem">
+      <h3 id="faq-heading" style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:1rem">Questions fréquentes</h3>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer" role="contentinfo">
+  <p><strong>DZImport</strong> — Calculateur de dédouanement automobile · Algérie 2025/2026</p>
+  <p id="footer-sub">Données basées sur la loi de finances 2025 · Grille tarifaire Min. Finances · Système ALSACE</p>
+  <p style="margin-top:.5rem;font-size:11px" id="footer-disc">Outil indicatif — non contractuel. Consultez les <a href="https://www.douane.gov.dz" style="color:rgba(255,255,255,.6)">Douanes Algériennes</a> pour les tarifs officiels.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+var lang='fr', currentTab='single', chartInst=null, chartInst2=null;
+var officialRate=150.85, selectedModel=-1;
+
+/* ═══ DATA ═══ */
+var MODELS=[
+  {name:'BYD Seal',brand:'BYD',origin:'china',engine:'electric',body:'tourisme',price:22000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:'Top ventes'},
+  {name:'BYD Dolphin',brand:'BYD',origin:'china',engine:'electric',body:'tourisme',price:14500,currency:'EUR',year:'2025',flag:'🇨🇳',tag:'Top ventes'},
+  {name:'BYD Atto 3',brand:'BYD',origin:'china',engine:'electric',body:'tourisme',price:24000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'BYD Song Plus',brand:'BYD',origin:'china',engine:'hybrid_small',body:'tourisme',price:21000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'Chery Tiggo 4 Pro',brand:'Chery',origin:'china',engine:'petrol_small',body:'tourisme',price:12000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:'Abordable'},
+  {name:'Chery Tiggo 7 Pro',brand:'Chery',origin:'china',engine:'petrol_small',body:'tourisme',price:18000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'Chery Arrizo 8',brand:'Chery',origin:'china',engine:'petrol_small',body:'tourisme',price:16000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'OMODA C5',brand:'Chery',origin:'china',engine:'petrol_small',body:'tourisme',price:17000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'MG5',brand:'MG',origin:'china',engine:'electric',body:'tourisme',price:16500,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'MG ZS EV',brand:'MG',origin:'china',engine:'electric',body:'tourisme',price:18500,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'Haval H6',brand:'Haval',origin:'china',engine:'petrol_small',body:'tourisme',price:20000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'JAC JS4',brand:'JAC',origin:'china',engine:'petrol_small',body:'tourisme',price:13000,currency:'EUR',year:'2025',flag:'🇨🇳',tag:''},
+  {name:'Geely Emgrand',brand:'Geely',origin:'china',engine:'petrol_small',body:'tourisme',price:10500,currency:'EUR',year:'2025',flag:'🇨🇳',tag:'Abordable'},
+  {name:'Dacia Sandero',brand:'Dacia',origin:'europe',engine:'petrol_small',body:'tourisme',price:12500,currency:'EUR',year:'2025',flag:'🇫🇷',tag:'Top ventes'},
+  {name:'Dacia Duster',brand:'Dacia',origin:'europe',engine:'petrol_small',body:'tourisme',price:16500,currency:'EUR',year:'2025',flag:'🇫🇷',tag:'Top ventes'},
+  {name:'Renault Clio',brand:'Renault',origin:'europe',engine:'petrol_small',body:'tourisme',price:16000,currency:'EUR',year:'2025',flag:'🇫🇷',tag:''},
+  {name:'Renault Symbol',brand:'Renault',origin:'europe',engine:'petrol_small',body:'tourisme',price:13000,currency:'EUR',year:'2025',flag:'🇫🇷',tag:''},
+  {name:'Peugeot 208',brand:'Peugeot',origin:'europe',engine:'petrol_small',body:'tourisme',price:18000,currency:'EUR',year:'2025',flag:'🇫🇷',tag:''},
+  {name:'Volkswagen Golf',brand:'VW',origin:'europe',engine:'petrol_small',body:'tourisme',price:24000,currency:'EUR',year:'2025',flag:'🇩🇪',tag:''},
+  {name:'Toyota Corolla',brand:'Toyota',origin:'japan',engine:'hybrid_small',body:'tourisme',price:24000,currency:'EUR',year:'2025',flag:'🇯🇵',tag:''},
+  {name:'Toyota Yaris',brand:'Toyota',origin:'japan',engine:'hybrid_small',body:'tourisme',price:19000,currency:'EUR',year:'2025',flag:'🇯🇵',tag:''},
+  {name:'Hyundai Tucson',brand:'Hyundai',origin:'japan',engine:'petrol_small',body:'tourisme',price:28000,currency:'EUR',year:'2025',flag:'🇰🇷',tag:''},
+  {name:'Kia Sportage',brand:'Kia',origin:'japan',engine:'petrol_small',body:'tourisme',price:26000,currency:'EUR',year:'2025',flag:'🇰🇷',tag:''},
+  {name:'Kia Picanto',brand:'Kia',origin:'japan',engine:'petrol_small',body:'tourisme',price:13500,currency:'EUR',year:'2025',flag:'🇰🇷',tag:'Abordable'},
+  {name:'Hyundai i10',brand:'Hyundai',origin:'japan',engine:'petrol_small',body:'tourisme',price:13000,currency:'EUR',year:'2025',flag:'🇰🇷',tag:'Abordable'},
+];
+
+var RATES={EUR:1,USD:0.918,CNY:0.1267,JPY:0.00615,KRW:0.000675,DZD:1/officialRate};
+
+var T={
+fr:{
+  navTag:'Calculateur de dédouanement automobile',
+  liveText:'Taux en direct · Mis à jour 2025',
+  heroTitle:'Calculateur de dédouanement automobile<br>pour l\'Algérie',
+  heroSub:'Estimez les droits de douane, TVA et taxes pour importer votre véhicule. Taux officiels & marché parallèle inclus.',
+  tSingle:'Calcul simple', tCompare:'Comparer Neuf vs &lt;3 ans',
+  vtype:'Type de véhicule', newCar:'Véhicule neuf', subNew:'Moins de 12 mois · jamais immatriculé',
+  usedCar:'Moins de 3 ans', subUsed:'Occasion · essence ou électrique uniquement',
+  models:'Rechercher un modèle populaire', modelsSub:'Cliquez pour pré-remplir le formulaire',
+  searchPh:'Ex: Dacia, BYD, Toyota, Hyundai…', noRes:'Aucun modèle trouvé.',
+  originEngine:'Origine & motorisation', originLbl:'Pays d\'origine', engineLbl:'Type de moteur',
+  bodyLbl:'Carrosserie', yearLbl:'Année du véhicule',
+  valueSection:'Valeur, transport & taux de change',
+  priceLbl:'Prix d\'achat TTC', currencyLbl:'Devise',
+  transportLbl:'Frais de transport (même devise)',
+  transportHint:'Europe: 800–1 500 € · Chine: 2 000–4 000 $ · hors frais portuaires algériens',
+  ratesTitle:'Taux de change EUR → DZD',
+  officialRate:'💳 Taux officiel (Banque d\'Algérie)', rateUsedNote:'Utilisé par défaut pour le calcul',
+  bmRate:'🌑 Taux parallèle (Carré / Square)', bmHint:'Entrez le taux du marché noir',
+  useBm:'Calculer avec le taux parallèle',
+  disclaimer:'⚠️ Estimation indicative uniquement. Les montants réels varient selon le taux officiel, les frais portuaires et l\'évaluation douanière (ALSACE depuis juil. 2025). Consultez un transitaire agréé avant toute décision.',
+  origins:['🇪🇺 Europe (France, Allemagne…)','🇨🇳 Chine','🇯🇵 Japon / Corée du Sud','🇺🇸 USA / Canada','🌍 Autre'],
+  engines:['Essence ≤ 1.8 L','Essence > 1.8 L','Diesel','Électrique','Hybride ≤ 1.8 L','Hybride > 1.8 L'],
+  bodies:['Tourisme / SUV / Berline','Utilitaire / Fourgon'],
+  resultTitle:'Résumé des frais de dédouanement',
+  taxableBase:'Base taxable (HT + transport)', customsDuty:'Droits de douane',
+  tva:'TVA (19%)', solidarity:'Taxe de solidarité', adminFees:'Frais dossier / expertise',
+  totalTax:'Total taxes douanières', totalCost:'Coût total estimé (voiture + taxes)',
+  approx:'≈', ofPrice:'% du prix d\'achat',
+  chinaNote:'🇨🇳 Véhicules chinois taxés sur leur prix en Chine (grille Min. Finances 2025) — généralement plus avantageux que l\'évaluation Argus.',
+  dieselWarn:'🚫 Le diesel est interdit à l\'importation pour les véhicules d\'occasion de moins de 3 ans. Cette règle s\'applique uniquement aux véhicules neufs.',
+  ageWarnNew:'⚠️ Un véhicule fabriqué il y a plus de 12 mois risque d\'être reclassé en véhicule d\'occasion par la douane algérienne.',
+  ageWarnUsed:'⚠️ Les véhicules de 3 ans ou plus ne sont pas importables par des particuliers en Algérie.',
+  exportPdf:'Exporter en PDF', bmActive:'🌑 Taux parallèle actif',
+  savings:'Économie sur les taxes', compareTitle:'Comparaison : Neuf vs Moins de 3 ans',
+  newLabel:'Véhicule neuf', usedLabel:'Moins de 3 ans',
+  howHeading:'Comment utiliser ce calculateur',
+  faqHeading:'Questions fréquentes',
+  footerSub:'Données basées sur la loi de finances 2025 · Grille tarifaire Min. Finances · Système ALSACE',
+  footerDisc:'Outil indicatif — non contractuel. Consultez les Douanes Algériennes pour les tarifs officiels.',
+  chartLabels:['Achat','Transport','Douane','TVA','Solidarité','Frais'],
+  steps:[
+    {n:'1',title:'Choisissez le type',desc:'Sélectionnez "Véhicule neuf" (moins de 12 mois, jamais immatriculé) ou "Moins de 3 ans" pour un véhicule d\'occasion récent.'},
+    {n:'2',title:'Sélectionnez un modèle',desc:'Recherchez votre marque ou modèle dans la liste pour pré-remplir automatiquement les champs (origine, moteur, prix estimé).'},
+    {n:'3',title:'Renseignez le prix',desc:'Entrez le prix d\'achat TTC dans la devise souhaitée, et ajoutez les frais de transport jusqu\'au port algérien.'},
+    {n:'4',title:'Définissez le taux',desc:'Le taux officiel est chargé automatiquement. Entrez le taux du marché parallèle si vous souhaitez comparer les deux options.'},
+    {n:'5',title:'Lisez les résultats',desc:'Les droits de douane, TVA et taxe de solidarité sont calculés instantanément. Le coût total inclut le prix du véhicule.'},
+    {n:'6',title:'Exportez le devis',desc:'Cliquez sur "Exporter en PDF" pour sauvegarder ou imprimer votre estimation et la partager avec votre transitaire.'},
+  ],
+  faqs:[
+    {q:'Quelle est la différence entre un véhicule neuf et moins de 3 ans ?',a:'Un véhicule neuf n\'a jamais été immatriculé et a moins de 12 mois depuis sa fabrication. Un véhicule de moins de 3 ans est un véhicule d\'occasion récent. Les taux de douane et les règles (diesel interdit pour les occasions) diffèrent.'},
+    {q:'Pourquoi le taux des véhicules chinois est-il différent ?',a:'Depuis 2025, la douane algérienne applique les prix du marché chinois comme référence pour les véhicules importés de Chine, et non les prix pratiqués en Algérie. Cela rend généralement les voitures chinoises plus avantageuses fiscalement.'},
+    {q:'Qu\'est-ce que le taux de change parallèle ?',a:'Le taux parallèle (marché noir ou informel) est le taux pratiqué officieusement, souvent au Carré Port Said ou Bab El Oued à Alger. Il est généralement plus élevé que le taux officiel de la Banque d\'Algérie. Il vous permet d\'estimer le coût réel en dinars selon votre situation.'},
+    {q:'Les frais portuaires sont-ils inclus ?',a:'Non. Les frais portuaires algériens (manutention, magasinage, scan douanier) varient entre 30 000 et 80 000 DA selon le port et le type de véhicule. Ils ne sont pas inclus dans cette estimation.'},
+    {q:'Peut-on importer un diesel de moins de 3 ans ?',a:'Non. La réglementation algérienne interdit aux particuliers d\'importer des véhicules diesel de moins de 3 ans. Seuls les véhicules neufs peuvent être importés en motorisation diesel.'},
+  ]
+},
+en:{
+  navTag:'Algeria Car Import Duty Calculator',
+  liveText:'Live rates · Updated 2025',
+  heroTitle:'Algeria Car Import<br>Duty Calculator',
+  heroSub:'Estimate customs duties, VAT and import taxes for your vehicle. Official & parallel market rates included.',
+  tSingle:'Simple calc', tCompare:'Compare New vs &lt;3 yrs',
+  vtype:'Vehicle type', newCar:'Brand new', subNew:'Under 12 months · never registered',
+  usedCar:'Under 3 years', subUsed:'Used · petrol or electric only',
+  models:'Search a popular model', modelsSub:'Click to auto-fill the form',
+  searchPh:'e.g. Dacia, BYD, Toyota, Hyundai…', noRes:'No models found.',
+  originEngine:'Origin & engine', originLbl:'Country of origin', engineLbl:'Engine type',
+  bodyLbl:'Body type', yearLbl:'Vehicle year',
+  valueSection:'Value, shipping & exchange rates',
+  priceLbl:'Purchase price (incl. tax)', currencyLbl:'Currency',
+  transportLbl:'Shipping cost (same currency)',
+  transportHint:'Europe: €800–1,500 · China: $2,000–4,000 · excludes Algerian port fees',
+  ratesTitle:'Exchange rate EUR → DZD',
+  officialRate:'💳 Official rate (Bank of Algeria)', rateUsedNote:'Used by default for calculations',
+  bmRate:'🌑 Parallel market rate (black market)', bmHint:'Enter the parallel market rate',
+  useBm:'Calculate using parallel market rate',
+  disclaimer:'⚠️ Indicative estimate only. Actual amounts vary with official rates, port fees and customs assessment (ALSACE since Jul. 2025). Consult a licensed freight forwarder before any decision.',
+  origins:['🇪🇺 Europe (France, Germany…)','🇨🇳 China','🇯🇵 Japan / South Korea','🇺🇸 USA / Canada','🌍 Other'],
+  engines:['Petrol ≤ 1.8 L','Petrol > 1.8 L','Diesel','Electric','Hybrid ≤ 1.8 L','Hybrid > 1.8 L'],
+  bodies:['Sedan / SUV / Hatchback','Utility / Van'],
+  resultTitle:'Customs duty breakdown',
+  taxableBase:'Taxable base (excl. VAT + shipping)', customsDuty:'Customs duty',
+  tva:'VAT (19%)', solidarity:'Solidarity tax', adminFees:'Admin / inspection fees',
+  totalTax:'Total customs charges', totalCost:'Estimated total cost (car + taxes)',
+  approx:'≈', ofPrice:'% of purchase price',
+  chinaNote:'🇨🇳 Chinese vehicles are taxed on their actual Chinese market price (2025 Ministry of Finance schedule) — generally lower than the Argus valuation.',
+  dieselWarn:'🚫 Diesel vehicles under 3 years old cannot be imported by private individuals. Only brand-new vehicles may import diesel.',
+  ageWarnNew:'⚠️ A vehicle manufactured more than 12 months ago may be reclassified as used by Algerian customs.',
+  ageWarnUsed:'⚠️ Vehicles aged 3 years or more are not importable by private individuals in Algeria.',
+  exportPdf:'Export as PDF', bmActive:'🌑 Parallel rate active',
+  savings:'Tax savings', compareTitle:'Comparison: New vs Under 3 years',
+  newLabel:'Brand new', usedLabel:'Under 3 years',
+  howHeading:'How to use this calculator',
+  faqHeading:'Frequently asked questions',
+  footerSub:'Data based on Finance Law 2025 · Ministry of Finance tariff schedule · ALSACE system',
+  footerDisc:'Indicative tool — not contractual. Consult Algerian Customs for official rates.',
+  chartLabels:['Purchase','Shipping','Customs','VAT','Solidarity','Admin'],
+  steps:[
+    {n:'1',title:'Choose the type',desc:'Select "Brand new" (under 12 months, never registered) or "Under 3 years" for a recent second-hand vehicle.'},
+    {n:'2',title:'Select a model',desc:'Search for your brand or model in the list to auto-fill the form fields (origin, engine, estimated price).'},
+    {n:'3',title:'Enter the price',desc:'Enter the purchase price including tax in your preferred currency, plus estimated shipping to the Algerian port.'},
+    {n:'4',title:'Set the exchange rate',desc:'The official rate loads automatically. Enter the parallel market rate if you want to compare both options side by side.'},
+    {n:'5',title:'Read the results',desc:'Customs duty, VAT and solidarity tax are calculated instantly. The total cost includes the vehicle purchase price.'},
+    {n:'6',title:'Export the estimate',desc:'Click "Export as PDF" to save or print your estimate and share it with your freight forwarder.'},
+  ],
+  faqs:[
+    {q:'What is the difference between new and under-3-year vehicles?',a:'A new vehicle has never been registered and is under 12 months from manufacture. An under-3-year vehicle is a recent second-hand car. Duty rates differ, and diesel is banned for used imports.'},
+    {q:'Why are Chinese vehicle rates different?',a:'Since 2025, Algerian customs applies the Chinese market price as the tax reference for vehicles imported from China, rather than Algerian resale prices. This generally makes Chinese cars more fiscally advantageous.'},
+    {q:'What is the parallel market exchange rate?',a:'The parallel rate (informal or black market) is the rate traded unofficially, often at Carré Port Said or Bab El Oued in Algiers. It is typically higher than the Bank of Algeria official rate. It lets you estimate real-world costs in dinars based on your situation.'},
+    {q:'Are port fees included?',a:'No. Algerian port fees (handling, storage, customs scan) vary between 30,000 and 80,000 DA depending on the port and vehicle type. They are not included in this estimate.'},
+    {q:'Can I import a used diesel vehicle?',a:'No. Algerian regulations prohibit private individuals from importing diesel vehicles under 3 years old. Only brand-new vehicles may be imported with a diesel engine.'},
+  ]
+},
+ar:{
+  navTag:'حاسبة رسوم الاستيراد الجمركية',
+  liveText:'أسعار مباشرة · محدّثة 2025',
+  heroTitle:'حاسبة رسوم الاستيراد الجمركية<br>للسيارات في الجزائر',
+  heroSub:'احسب الرسوم الجمركية والضرائب لاستيراد سيارتك. يشمل السعر الرسمي وسعر السوق الموازي.',
+  tSingle:'حساب بسيط', tCompare:'مقارنة جديدة vs أقل من 3 سنوات',
+  vtype:'نوع السيارة', newCar:'سيارة جديدة', subNew:'أقل من 12 شهراً · لم تُسجَّل مطلقاً',
+  usedCar:'أقل من 3 سنوات', subUsed:'مستعملة · بنزين أو كهربائي فقط',
+  models:'ابحث عن موديل شائع', modelsSub:'انقر لملء النموذج تلقائياً',
+  searchPh:'مثال: داسيا، بي واي دي، تويوتا…', noRes:'لم يتم العثور على موديل.',
+  originEngine:'بلد المنشأ ونوع المحرك', originLbl:'بلد المنشأ', engineLbl:'نوع المحرك',
+  bodyLbl:'نوع الهيكل', yearLbl:'سنة الصنع',
+  valueSection:'القيمة والشحن وأسعار الصرف',
+  priceLbl:'سعر الشراء (شامل الضريبة)', currencyLbl:'العملة',
+  transportLbl:'تكاليف الشحن (بنفس العملة)',
+  transportHint:'أوروبا: 800–1500 € · الصين: 2000–4000 $ · لا تشمل رسوم الميناء الجزائري',
+  ratesTitle:'سعر الصرف EUR → دج',
+  officialRate:'💳 السعر الرسمي (بنك الجزائر)', rateUsedNote:'يُستخدم افتراضياً في الحساب',
+  bmRate:'🌑 السوق الموازي (الكاري / باب الواد)', bmHint:'أدخل سعر صرف السوق السوداء',
+  useBm:'الحساب بسعر السوق الموازي',
+  disclaimer:'⚠️ تقدير استرشادي فقط. تختلف المبالغ الفعلية حسب سعر الصرف الرسمي ورسوم الميناء وتقدير الجمارك (نظام ALSACE منذ يوليو 2025). استشر وكيلاً جمركياً معتمداً قبل أي قرار.',
+  origins:['🇪🇺 أوروبا (فرنسا، ألمانيا…)','🇨🇳 الصين','🇯🇵 اليابان / كوريا الجنوبية','🇺🇸 الولايات المتحدة / كندا','🌍 أخرى'],
+  engines:['بنزين ≤ 1.8 ل','بنزين > 1.8 ل','ديزل','كهربائي','هجين ≤ 1.8 ل','هجين > 1.8 ل'],
+  bodies:['سياحية / SUV / سيدان','مركبة نفعية / شاحنة صغيرة'],
+  resultTitle:'ملخص رسوم الدخول الجمركي',
+  taxableBase:'الوعاء الضريبي (بدون TVA + الشحن)', customsDuty:'الرسوم الجمركية',
+  tva:'TVA (19%)', solidarity:'ضريبة التضامن', adminFees:'رسوم الملف والخبرة',
+  totalTax:'إجمالي الرسوم الجمركية', totalCost:'التكلفة الإجمالية التقديرية (السيارة + الرسوم)',
+  approx:'≈', ofPrice:'% من سعر الشراء',
+  chinaNote:'🇨🇳 السيارات الصينية تُحتسب ضرائبها على أساس سعرها في السوق الصيني (جدول وزارة المالية 2025) — وهو عموماً أقل من تقييم Argus.',
+  dieselWarn:'🚫 لا يُسمح باستيراد سيارات ديزل مستعملة أقل من 3 سنوات من طرف الأفراد. هذا الأمر مخصص للسيارات الجديدة فقط.',
+  ageWarnNew:'⚠️ السيارة المصنوعة منذ أكثر من 12 شهراً قد تُعاد تصنيفها كمستعملة من قِبل الجمارك الجزائرية.',
+  ageWarnUsed:'⚠️ السيارات ذات عمر 3 سنوات أو أكثر لا يمكن استيرادها من قِبل الأفراد في الجزائر.',
+  exportPdf:'تصدير PDF', bmActive:'🌑 السعر الموازي نشط',
+  savings:'التوفير في الرسوم', compareTitle:'مقارنة: سيارة جديدة مقابل أقل من 3 سنوات',
+  newLabel:'سيارة جديدة', usedLabel:'أقل من 3 سنوات',
+  howHeading:'كيفية استخدام هذه الحاسبة',
+  faqHeading:'الأسئلة الشائعة',
+  footerSub:'البيانات مستندة إلى قانون المالية 2025 · الجدول الجمركي لوزارة المالية · نظام ALSACE',
+  footerDisc:'أداة استرشادية غير ملزمة. راجع الجمارك الجزائرية للتعرف على الأسعار الرسمية.',
+  chartLabels:['الشراء','الشحن','الجمارك','TVA','التضامن','رسوم'],
+  steps:[
+    {n:'1',title:'اختر نوع السيارة',desc:'حدد "سيارة جديدة" (أقل من 12 شهراً، لم تُسجَّل مطلقاً) أو "أقل من 3 سنوات" للسيارات المستعملة الحديثة.'},
+    {n:'2',title:'ابحث عن موديل',desc:'ابحث عن علامتك التجارية أو موديلك في القائمة لملء النموذج تلقائياً (المنشأ، المحرك، السعر التقديري).'},
+    {n:'3',title:'أدخل السعر',desc:'أدخل سعر الشراء شاملاً الضريبة بالعملة التي تريد، ثم أضف تكاليف الشحن إلى الميناء الجزائري.'},
+    {n:'4',title:'حدد سعر الصرف',desc:'يُحمَّل السعر الرسمي تلقائياً. أدخل سعر السوق الموازي إذا أردت المقارنة بين الخيارين.'},
+    {n:'5',title:'اقرأ النتائج',desc:'يتم حساب الرسوم الجمركية وTVA وضريبة التضامن فوراً. التكلفة الإجمالية تشمل سعر السيارة.'},
+    {n:'6',title:'صدّر التقدير',desc:'انقر على "تصدير PDF" لحفظ أو طباعة تقديرك ومشاركته مع وكيلك الجمركي.'},
+  ],
+  faqs:[
+    {q:'ما الفرق بين السيارة الجديدة وأقل من 3 سنوات؟',a:'السيارة الجديدة لم تُسجَّل قط وعمرها أقل من 12 شهراً من تاريخ الصنع. أما أقل من 3 سنوات فهي سيارة مستعملة حديثة. تختلف نسب الرسوم الجمركية، كما أن الديزل محظور للمستعملات.'},
+    {q:'لماذا تختلف أسعار السيارات الصينية؟',a:'منذ 2025، تعتمد الجمارك الجزائرية أسعار السوق الصيني مرجعاً لضريبة السيارات المستوردة من الصين، بدلاً من الأسعار الجزائرية. وهذا يجعل السيارات الصينية عموماً أفضل من الناحية الضريبية.'},
+    {q:'ما هو سعر الصرف في السوق الموازي؟',a:'هو السعر الذي يُتداوَل بشكل غير رسمي، ولا سيما في الكاري (بورصة الصرف) أو باب الواد بالجزائر العاصمة. يكون عادةً أعلى من السعر الرسمي لبنك الجزائر، ويساعدك على تقدير التكلفة الفعلية بالدينار حسب وضعك.'},
+    {q:'هل تشمل رسوم الميناء؟',a:'لا. رسوم الميناء الجزائري (المناولة، التخزين، الفحص الجمركي) تتراوح بين 30 000 و80 000 دج حسب الميناء ونوع السيارة، وهي غير مشمولة في هذا التقدير.'},
+    {q:'هل يمكن استيراد ديزل أقل من 3 سنوات؟',a:'لا. تحظر اللوائح الجزائرية على الأفراد استيراد سيارات ديزل أقل من 3 سنوات. محرك الديزل مسموح به فقط للسيارات الجديدة.'},
+  ]
+}
+};
+
+/* ═══ HELPERS ═══ */
+function getEurDzd(){
+  var useBm=document.getElementById('use-bm').checked;
+  var bm=parseFloat(document.getElementById('bm-rate').value)||0;
+  return(useBm&&bm>0)?bm:officialRate;
+}
+function toEUR(a,c){var r={EUR:1,USD:0.918,CNY:0.1267,JPY:0.00615,KRW:0.000675,DZD:1/officialRate};return a*(r[c]||1);}
+function getDR(engine,body,vtype){
+  if(vtype==='used'){
+    if(engine==='diesel')return .30;
+    if(engine==='electric')return body==='utilitaire'?.0547:.1142;
+    if(engine==='petrol_large'||engine==='hybrid_large')return body==='utilitaire'?.2186:.30;
+    return body==='utilitaire'?.1366:.1962;
+  }
+  if(engine==='electric')return body==='utilitaire'?.0547:.1142;
+  if(engine==='diesel')return body==='utilitaire'?.1366:.30;
+  if(engine==='petrol_large'||engine==='hybrid_large')return body==='utilitaire'?.2186:1.2106;
+  return body==='utilitaire'?.1366:.1962;
+}
+function getSR(e){if(e==='electric')return .02;if(e==='petrol_large'||e==='hybrid_large'||e==='diesel')return .10;return .05;}
+function calcF(pEUR,tEUR,engine,body,vtype){
+  var ht=pEUR/1.20, base=ht+tEUR, dr=getDR(engine,body,vtype);
+  var duty=base*dr, tva=(base+duty)*.19, sr=getSR(engine), sol=base*sr, admin=150;
+  return{base,duty,tva,sol,admin,total:duty+tva+sol+admin,dr,sr,grand:pEUR+tEUR+duty+tva+sol+admin};
+}
+function fDA(v){return new Intl.NumberFormat('fr-DZ',{maximumFractionDigits:0}).format(Math.round(v))+' DA';}
+function fEUR(v){return new Intl.NumberFormat('fr-FR',{maximumFractionDigits:0}).format(Math.round(v))+' €';}
+function da(v){return fDA(v*getEurDzd());}
+function row(n,v,tot){
+  var c=tot?'line-row tot':'line-row';
+  return'<div class="'+c+'"><span class="ln">'+n+'</span><span class="lv">'+v+'</span></div>';
+}
+
+/* ═══ UI ACTIONS ═══ */
+function selectVtype(btn){
+  document.querySelectorAll('.vtype-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  calculate();
+}
+function toggleBm(){
+  var cb=document.getElementById('use-bm');
+  cb.checked=!cb.checked;
+  calculate();
+}
+function setTab(tab){
+  currentTab=tab;
+  document.getElementById('tab-single').classList.toggle('active',tab==='single');
+  document.getElementById('tab-compare').classList.toggle('active',tab==='compare');
+  document.getElementById('vtype-card').style.display=tab==='compare'?'none':'block';
+  calculate();
+}
+
+/* ═══ MODELS ═══ */
+function filterModels(){
+  var q=(document.getElementById('model-search').value||'').toLowerCase();
+  renderModels(q);
+}
+function renderModels(q){
+  q=q||'';
+  var t=T[lang];
+  var list=q?MODELS.filter(function(m){return m.name.toLowerCase().includes(q)||m.brand.toLowerCase().includes(q);}):MODELS;
+  var grid=document.getElementById('model-grid');
+  if(!list.length){grid.innerHTML='<p class="no-res">'+t.noRes+'</p>';return;}
+  grid.innerHTML=list.map(function(m){
+    var idx=MODELS.indexOf(m);
+    var sel=selectedModel===idx?' sel':'';
+    var tag=m.tag?'<span class="mtag">'+m.tag+'</span>':'';
+    return'<button class="model-pill'+sel+'" onclick="applyModel('+idx+')">'+m.flag+' '+m.name+tag+'</button>';
+  }).join('');
+}
+function applyModel(i){
+  selectedModel=i;
+  var m=MODELS[i];
+  document.getElementById('origin').value=m.origin;
+  document.getElementById('engine').value=m.engine;
+  document.getElementById('body').value=m.body;
+  document.getElementById('price').value=m.price;
+  document.getElementById('currency').value=m.currency;
+  document.getElementById('year').value=m.year;
+  filterModels();
+  calculate();
+}
+
+/* ═══ CALCULATE ═══ */
+function calculate(){
+  var t=T[lang];
+  var vtype=document.querySelector('.vtype-btn.active')?.dataset.val||'new';
+  var origin=document.getElementById('origin').value;
+  var engine=document.getElementById('engine').value;
+  var body=document.getElementById('body').value;
+  var currency=document.getElementById('currency').value;
+  var pRaw=parseFloat(document.getElementById('price').value)||0;
+  var trRaw=parseFloat(document.getElementById('transport').value)||0;
+  var year=parseInt(document.getElementById('year').value);
+  if(pRaw<=0){document.getElementById('result-section').innerHTML='';return;}
+  var pEUR=toEUR(pRaw,currency), trEUR=toEUR(trRaw,currency);
+  var age=2026-year;
+  var ageWarn=(vtype==='new'&&age>1)?t.ageWarnNew:(vtype==='used'&&age>=3)?t.ageWarnUsed:'';
+  var useBm=document.getElementById('use-bm').checked;
+  var bmV=parseFloat(document.getElementById('bm-rate').value)||0;
+  var rateLine=useBm&&bmV>0?'1 EUR = '+bmV+' DA (parallèle)':'1 EUR = '+getEurDzd().toFixed(2)+' DA (officiel)';
+
+  if(currentTab==='compare'){renderCompare(pEUR,trEUR,engine,body,origin,t,rateLine,useBm,bmV);return;}
+
+  var f=calcF(pEUR,trEUR,engine,body,vtype);
+  var taxPct=Math.round((f.total/pEUR)*100);
+  var html='<div class="result-wrapper">';
+  if(ageWarn)html+='<p class="notice warn" style="margin-bottom:.75rem">'+ageWarn+'</p>';
+  if(useBm&&bmV>0)html+='<p class="notice warn" style="margin-bottom:.75rem">'+t.bmActive+' — 1 EUR = '+bmV+' DA</p>';
+  html+='<div class="result-card">';
+  html+='<div class="result-head"><h3>'+t.resultTitle+'</h3><span class="result-rate-badge">'+rateLine+'</span></div>';
+  html+='<div class="result-body">';
+  html+='<div class="metric-row">';
+  html+='<div class="metric"><p class="ml">'+t.customsDuty+'<br><small>('+parseFloat((f.dr*100).toFixed(2))+'%)</small></p><p class="mv">'+da(f.duty)+'</p><p class="ms">'+t.approx+' '+fEUR(f.duty)+'</p></div>';
+  html+='<div class="metric"><p class="ml">'+t.tva+'</p><p class="mv">'+da(f.tva)+'</p><p class="ms">'+t.approx+' '+fEUR(f.tva)+'</p></div>';
+  html+='<div class="metric"><p class="ml">'+t.solidarity+'<br><small>('+parseFloat((f.sr*100).toFixed(0))+'%)</small></p><p class="mv">'+da(f.sol)+'</p><p class="ms">'+t.approx+' '+fEUR(f.sol)+'</p></div>';
+  html+='</div><div class="divider"></div>';
+  html+=row(t.taxableBase,fEUR(f.base));
+  html+=row(t.customsDuty+' ('+parseFloat((f.dr*100).toFixed(2))+'%)',fEUR(f.duty));
+  html+=row(t.tva,fEUR(f.tva));
+  html+=row(t.solidarity+' ('+parseFloat((f.sr*100).toFixed(0))+'%)',fEUR(f.sol));
+  html+=row(t.adminFees,fEUR(f.admin));
+  html+='<div class="divider"></div>';
+  html+=row(t.totalTax,da(f.total),true);
+  html+='<p style="font-size:11px;color:var(--text3);padding:3px 0 8px">'+t.approx+' '+fEUR(f.total)+' — '+taxPct+t.ofPrice+'</p>';
+  html+='<div class="grand-box"><span class="gl">'+t.totalCost+'</span><span class="gv">'+da(f.grand)+'</span></div>';
+  html+='<div class="chart-wrap"><canvas id="bc"></canvas></div>';
+  html+='<button class="export-btn" onclick="window.print()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg> '+t.exportPdf+'</button>';
+  html+='</div></div>';
+  if(origin==='china')html+='<p class="notice info" style="margin-top:.8rem">'+t.chinaNote+'</p>';
+  if(engine==='diesel'&&vtype==='used')html+='<p class="notice danger" style="margin-top:.7rem">'+t.dieselWarn+'</p>';
+  html+='</div>';
+  document.getElementById('result-section').innerHTML=html;
+  renderChart([pEUR,trEUR,f.duty,f.tva,f.sol,f.admin],t.chartLabels,'bc');
+}
+
+function renderCompare(pEUR,trEUR,engine,body,origin,t,rateLine,useBm,bmV){
+  var fn=calcF(pEUR,trEUR,engine,body,'new');
+  var fu=calcF(pEUR,trEUR,engine,body,'used');
+  var winNew=fn.total<=fu.total, diff=Math.abs(fu.total-fn.total);
+  var bm=(useBm&&bmV>0)?'<p class="notice warn" style="margin-bottom:.75rem">'+t.bmActive+' — 1 EUR = '+bmV+' DA</p>':'';
+  var html='<div class="result-wrapper">'+bm+'<div class="result-card"><div class="result-head"><h3>'+t.compareTitle+'</h3><span class="result-rate-badge">'+rateLine+'</span></div><div class="result-body"><div class="cmp-grid">';
+  function cCol(f,label,win){
+    var h='<div class="cmp-col'+(win?' winner':'')+'"><h4>'+label+(win?' ✅':'')+'</h4>';
+    h+=row(t.customsDuty+' ('+parseFloat((f.dr*100).toFixed(2))+'%)',fEUR(f.duty));
+    h+=row(t.tva,fEUR(f.tva));
+    h+=row(t.solidarity,fEUR(f.sol));
+    h+='<div class="divider"></div>';
+    h+=row(t.totalTax,da(f.total),true);
+    h+='<p style="font-size:11px;color:var(--text3);margin-top:4px">'+t.totalCost+': <strong>'+da(f.grand)+'</strong></p></div>';
+    return h;
+  }
+  html+=cCol(fn,t.newLabel,winNew)+cCol(fu,t.usedLabel,!winNew);
+  html+='</div><div class="notice info" style="margin-top:.85rem">💡 '+t.savings+': '+fEUR(diff)+' ('+da(diff)+') — '+(winNew?t.newLabel:t.usedLabel)+' est moins taxé</div>';
+  html+='<div class="chart-wrap"><canvas id="bc2"></canvas></div>';
+  html+='<button class="export-btn" onclick="window.print()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg> '+t.exportPdf+'</button>';
+  html+='</div></div></div>';
+  if(origin==='china')html+='<p class="notice info" style="margin-top:.8rem">'+t.chinaNote+'</p>';
+  document.getElementById('result-section').innerHTML=html;
+  setTimeout(function(){
+    if(chartInst2)chartInst2.destroy();
+    var ctx=document.getElementById('bc2');if(!ctx)return;
+    chartInst2=new Chart(ctx,{type:'bar',data:{
+      labels:t.chartLabels.slice(2),
+      datasets:[
+        {label:t.newLabel,data:[fn.duty,fn.tva,fn.sol,fn.admin],backgroundColor:'#1B4FD8',borderRadius:4},
+        {label:t.usedLabel,data:[fu.duty,fu.tva,fu.sol,fu.admin],backgroundColor:'#E8420A',borderRadius:4}
+      ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,labels:{font:{size:11},boxWidth:10}}},scales:{x:{grid:{display:false},ticks:{font:{size:10}}},y:{grid:{color:'rgba(0,0,0,.06)'},ticks:{font:{size:10},callback:function(v){return fEUR(v);}}}}}});
+  },60);
+}
+
+function renderChart(data,labels,id){
+  setTimeout(function(){
+    if(chartInst)chartInst.destroy();
+    var ctx=document.getElementById(id);if(!ctx)return;
+    chartInst=new Chart(ctx,{type:'bar',data:{labels:labels,datasets:[{data:data,backgroundColor:['#1B4FD8','#1D9E75','#D85A30','#BA7517','#D4537E','#888780'],borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return fEUR(c.raw);}}}},scales:{x:{grid:{display:false},ticks:{font:{size:10}}},y:{grid:{color:'rgba(0,0,0,.06)'},ticks:{font:{size:10},callback:function(v){return fEUR(v);}}}}}});
+  },60);
+}
+
+/* ═══ HOW TO USE ═══ */
+function renderHowTo(){
+  var t=T[lang];
+  document.getElementById('how-heading').textContent=t.howHeading;
+  document.getElementById('faq-heading').textContent=t.faqHeading;
+  var sg=document.getElementById('steps-grid');
+  sg.innerHTML=t.steps.map(function(s){
+    return'<div class="step-card"><div class="step-num">'+s.n+'</div><h3>'+s.title+'</h3><p>'+s.desc+'</p></div>';
+  }).join('');
+  var fl=document.getElementById('faq-list');
+  fl.innerHTML=t.faqs.map(function(f,i){
+    return'<div class="faq-item" id="faq-'+i+'"><button class="faq-q" onclick="toggleFaq('+i+')" aria-expanded="false">'+f.q+'<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><p class="faq-a">'+f.a+'</p></div>';
+  }).join('');
+}
+function toggleFaq(i){
+  var item=document.getElementById('faq-'+i);
+  var isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(function(el){el.classList.remove('open');el.querySelector('.faq-q').setAttribute('aria-expanded','false');});
+  if(!isOpen){item.classList.add('open');item.querySelector('.faq-q').setAttribute('aria-expanded','true');}
+}
+
+/* ═══ SET LANG ═══ */
+function setLang(l){
+  lang=l;
+  var t=T[l];
+  var isAr=l==='ar';
+  document.documentElement.setAttribute('lang',l);
+  document.getElementById('body').setAttribute('dir',isAr?'rtl':'ltr');
+  document.querySelectorAll('.nav-lang button').forEach(function(b){
+    b.classList.toggle('active',b.getAttribute('lang')===l);
+  });
+  document.getElementById('nav-tag').textContent=t.navTag;
+  document.getElementById('live-txt').textContent=t.liveText;
+  document.getElementById('hero-title').innerHTML=t.heroTitle;
+  document.getElementById('hero-sub').textContent=t.heroSub;
+  document.getElementById('t-single').textContent=t.tSingle;
+  document.getElementById('t-compare').innerHTML=t.tCompare;
+  document.getElementById('lbl-vtype').textContent=t.vtype;
+  document.getElementById('lbl-new').textContent=t.newCar;
+  document.getElementById('sub-new').textContent=t.subNew;
+  document.getElementById('lbl-used').textContent=t.usedCar;
+  document.getElementById('sub-used').textContent=t.subUsed;
+  document.getElementById('lbl-models').textContent=t.models;
+  document.getElementById('lbl-models-sub').textContent=t.modelsSub;
+  document.getElementById('model-search').placeholder=t.searchPh;
+  document.getElementById('lbl-origin-engine').textContent=t.originEngine;
+  document.getElementById('lbl-origin').textContent=t.originLbl;
+  document.getElementById('lbl-engine').textContent=t.engineLbl;
+  document.getElementById('lbl-body').textContent=t.bodyLbl;
+  document.getElementById('lbl-year').textContent=t.yearLbl;
+  document.getElementById('lbl-value-section').textContent=t.valueSection;
+  document.getElementById('lbl-price').textContent=t.priceLbl;
+  document.getElementById('lbl-currency').textContent=t.currencyLbl;
+  document.getElementById('lbl-transport').textContent=t.transportLbl;
+  document.getElementById('transport-hint').textContent=t.transportHint;
+  document.getElementById('lbl-rates-title').textContent=t.ratesTitle;
+  document.getElementById('lbl-official-rate').textContent=t.officialRate;
+  document.getElementById('rate-used-note').textContent=t.rateUsedNote;
+  document.getElementById('lbl-bm-rate').textContent=t.bmRate;
+  document.getElementById('bm-hint').textContent=t.bmHint;
+  document.getElementById('lbl-use-bm').textContent=t.useBm;
+  document.getElementById('disclaimer-notice').textContent=t.disclaimer;
+  document.getElementById('footer-sub').textContent=t.footerSub;
+  document.getElementById('footer-disc').innerHTML=t.footerDisc+'<a href="https://www.douane.gov.dz" style="color:rgba(255,255,255,.6)"> douane.gov.dz</a>';
+  ['opt-europe','opt-china','opt-japan','opt-usa','opt-other'].forEach(function(id,i){var el=document.getElementById(id);if(el)el.textContent=t.origins[i];});
+  ['opt-ps','opt-pl','opt-di','opt-el','opt-hs','opt-hl'].forEach(function(id,i){var el=document.getElementById(id);if(el)el.textContent=t.engines[i];});
+  ['opt-tour','opt-util'].forEach(function(id,i){var el=document.getElementById(id);if(el)el.textContent=t.bodies[i];});
+  renderModels('');
+  renderHowTo();
+  calculate();
+}
+
+/* ═══ LIVE RATE ═══ */
+function fetchRate(){
+  fetch('https://api.exchangerate-api.com/v4/latest/EUR').then(function(r){return r.json();}).then(function(d){
+    var dzd=d.rates&&d.rates.DZD;
+    if(dzd){
+      officialRate=dzd;
+      document.getElementById('official-rate-val').textContent='1 EUR = '+parseFloat(dzd.toFixed(2))+' DA';
+      calculate();
+    }
+  }).catch(function(){
+    document.getElementById('official-rate-val').textContent='1 EUR = '+officialRate.toFixed(2)+' DA';
+  });
+}
+
+/* ═══ INIT ═══ */
+renderModels('');
+renderHowTo();
+fetchRate();
+calculate();
+</script>
+</body>
+</html>
